@@ -12,7 +12,7 @@ Easily configure your Windows 11 machine for an efficient workflow using Chocola
 
 These instructions have been tested on an MSI laptop with Windows 11 and various virtual machines.
 
-### PowerShell Commands
+### PowerShell Commands - RUN ONLY AS ADMIN
 
 ```powershell
 Get-ExecutionPolicy
@@ -22,12 +22,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/inst...'))
 
-choco install nvidia-driver ccleaner dotnetfx zoom google-drive-file-stream jre8 vcredist140 totalcommander winrar flashplayerplugin notepad excel word powerbi adobereader npppluginmanager -y
 
-choco install virtualbox vmware-workstation putty mobaxterm pycharm visualstudio visualstudio2019 vmim microsoft-windows-subsystem-linux git mongodb docker python miniconda nvim-ui vim ntop.portable wsl mysql postgresql dbeaver docker-engine docker-desktop -y
+choco install vim wsl2 sublimetext3.app nvidia-driver ccleaner dotnetfx zoom google-drive-file-stream jre8 vcredist140 totalcommander winrar flashplayerplugin notepad excel word powerbi adobereader npppluginmanager virtualbox vmware-workstation putty mobaxterm pycharm-community visualstudio visualstudio2019 vmim microsoft-windows-subsystem-linux git mongodb docker python miniconda nvim-ui vim ntop.portable wsl mysql postgresql dbeaver docker-engine docker-desktop lightshot telegram googlechrome whatsapp figma -A
 
-choco install telegram googlechrome whatsapp -y
-choco install figma photoshop 3dsmax -y
 ```
 ### Additional Commands for Customization (you can modify for your own setup):
 

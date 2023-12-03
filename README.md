@@ -6,11 +6,13 @@ Easily configure your Windows 11 machine for an efficient workflow using Chocola
 
 1. Install Chocolatey(run command in CMD as admin)
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-
-3. Download trusted packages using Chocolatey (there you can find other packages).
-4. Install software from a local directory if desired.
-5. Optionally, set up drivers for your laptop.
-6. Use the `-a` flag to accept all installations.
+2. Restart
+3. Update Chocolatey(run command in CMD as admin)
+choco upgrade chocolatey
+4. Download trusted packages using Chocolatey (there you can find other packages).
+6. Install software from a local directory if desired.
+7. Optionally, set up drivers for your laptop.
+8. Use the `-a` flag to accept all installations.
 
 These instructions have been tested on an MSI laptop with Windows 11 and various virtual machines.
 

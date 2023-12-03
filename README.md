@@ -13,6 +13,7 @@ choco upgrade chocolatey
 6. Install software from a local directory if desired.
 7. Optionally, set up drivers for your laptop.
 8. Use the `-a` flag to accept all installations.
+9. install WLS2 => wsl --install
 
 These instructions have been tested on an MSI laptop with Windows 11 and various virtual machines.
 

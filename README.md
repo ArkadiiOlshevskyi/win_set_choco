@@ -4,11 +4,13 @@ Easily configure your Windows 11 machine for an efficient workflow using Chocola
 
 ## Installation Steps:
 
-1. Install Chocolatey.
-2. Download trusted packages using Chocolatey (there you can find other packages).
-3. Install software from a local directory if desired.
-4. Optionally, set up drivers for your laptop.
-5. Use the `-a` flag to accept all installations.
+1. Install Chocolatey(run command in CMD as admin)
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+3. Download trusted packages using Chocolatey (there you can find other packages).
+4. Install software from a local directory if desired.
+5. Optionally, set up drivers for your laptop.
+6. Use the `-a` flag to accept all installations.
 
 These instructions have been tested on an MSI laptop with Windows 11 and various virtual machines.
 
@@ -23,7 +25,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/inst...'))
 
 
-choco install vim wsl2 sublimetext3.app nvidia-driver ccleaner dotnetfx zoom google-drive-file-stream jre8 vcredist140 totalcommander winrar flashplayerplugin notepad excel word powerbi adobereader npppluginmanager virtualbox vmware-workstation putty mobaxterm pycharm-community visualstudio visualstudio2019 vmim microsoft-windows-subsystem-linux git mongodb docker python miniconda nvim-ui vim ntop.portable wsl mysql postgresql dbeaver docker-engine docker-desktop lightshot telegram googlechrome whatsapp figma -A
+choco install vim wsl2 sublimetext3.app cpu-znvidia-driver ccleaner dotnetfx zoom google-drive-file-stream jre8 vcredist140 totalcommander winrar flashplayerplugin notepad excel word powerbi adobereader npppluginmanager virtualbox vmware-workstation putty mobaxterm pycharm-community visualstudio visualstudio2019 vmim microsoft-windows-subsystem-linux git mongodb docker python miniconda nvim-ui vim ntop.portable wsl mysql postgresql dbeaver docker-engine docker-desktop lightshot telegram googlechrome whatsapp figma -y -A
 
 ```
 ### Additional Commands for Customization (you can modify for your own setup):
